@@ -1,2 +1,1022 @@
 <!DOCTYPE html>
+
+<html>
+<head>
+<style> 
+
+
+</style>
+
+<style>
+
+.grid {
+
+
+   
+    height: 450px;
+    width: 294px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.square{
+
+    height: 40px;
+    width:  40px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+
+.rectan{
+
+    height: 20px;
+    width:  40px;
+ 
+}
+
+
+.bolita {
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.rayita {
+    
+    height: 2px;
+    width:  40px;
+    background-color: black;
+  
+}
+.rayitas {
+    
+    height: 1px;
+    width:  40px;
+    background-color: black;
+  
+}
+
+.opvacia {
+ 
+    border: 1px solid;
+    border-radius: 40px;
+
+}
+
+.opllena {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.buena {
+
+    background-image: url(
+https://github.com/llicommg/llicommg.github.io/blob/main/correcta.jpg);
+    background-size: cover;
+}
+.mala {
+
+    background-image: url(
+https://github.com/llicommg/llicommg.github.io/blob/main/incorrecta.jpg);
+    background-size: cover;  
+}
+.letgran {
+    font-size: 40px;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+    <h2>Select the Right one / Elige la correcta</h2>
+    
+
+<div class ="grid">
+   <div class = "square" id="0"></div>
+   <div class = "square" id="1"></div>
+   <div class = "square" id="2"></div>
+   <div class = "square" id="3"></div>
+   <div class = "square" id="4"></div>
+   <div class = "square" id="5"></div>
+   <div class = "square" id="6"></div>
+   <div class = "square" id="7"></div>
+   <div class = "square" id="8"></div>
+   <div class = "square" id="9"></div>
+   <div class = "square" id="10"></div>
+   <div class = "square" id="11"></div>
+   <div class = "square" id="12"></div>
+   <div class = "square" id="13"></div>
+   <div class = "square" id="14"></div>
+   <div class = "square" id="15"></div>
+   <div class = "square" id="16"></div>
+   <div class = "square" id="17"></div>
+   <div class = "square" id="18"></div>
+   <div class = "square" id="19"></div>
+   <div class = "square" id="20"></div>
+   <div class = "square" id="21"></div>
+   <div class = "square" id="22"></div>
+   <div class = "square" id="23"></div>
+   <div class = "square" id="24"></div>
+   <div class = "square" id="25"></div>
+   <div class = "square" id="26"></div>
+   <div class = "square" id="27"></div>
+   <div class = "square" id="28"></div>
+   <div class = "square" id="29"></div>
+   <div class = "square" id="30"></div>
+   <div class = "square" id="31"></div>
+   <div class = "square" id="32"></div>
+   <div class = "square" id="33"></div>
+   <div class = "square" id="34"></div>
+   <div class = "square" id="35"></div>
+   <div class = "square" id="36"></div>
+   <div class = "square" id="37"></div>
+   <div class = "square" id="38"></div>
+   <div class = "square" id="39"></div>
+   <div class = "square" id="40"></div>
+   <div class = "square" id="41"></div>
+   <div class = "square" id="42"></div>
+   <div class = "square" id="43"></div>
+   <div class = "square" id="44"></div>
+   <div class = "square" id="45"></div>
+   <div class = "square" id="46"></div>
+   <div class = "square" id="47"></div>
+   <div class = "square" id="48"></div>
+   <div class = "square" id="49"></div>
+   <div class = "square" id="50"></div>
+   <div class = "square" id="51"></div>
+   <div class = "square" id="52"></div>
+   <div class = "square" id="53"></div>
+   <div class = "square" id="54"></div>
+   <div class = "square" id="55"></div>
+   <div class = "square" id="56"></div>
+   <div class = "square" id="57"></div>
+   <div class = "square" id="58"></div>
+   <div class = "square" id="59"></div>
+   <div class = "square" id="60"></div>
+   <div class = "square" id="61"></div>
+   <div class = "square" id="62"></div>
+   <div class = "square" id="63"></div>
+   <div class = "square" id="64"></div>
+   <div class = "square" id="65"></div>
+   <div class = "square" id="66"></div>
+   <div class = "square" id="67"></div>
+   <div class = "square" id="68"></div>
+   <div class = "square" id="69"></div>
+   <div class = "square" id="70"></div>
+   <div class = "square" id="71"></div>
+   <div class = "square" id="72"></div>
+   <div class = "square" id="73"></div>
+   <div class = "square" id="74"></div>
+   <div class = "square" id="75"></div>
+   <div class = "square" id="76"></div>
+   <div class = "square" id="77"></div>
+   <div class = "square" id="78"></div>
+   <div class = "square" id="79"></div>
+   <div class = "square" id="80"></div>
+   <div class = "square" id="81"></div>
+   <div class = "square" id="82"></div>
+   <div class = "square" id="83"></div>
+
+</div>
+
+
+
+            <button onclick="Veacasa()">Home</button>
+                
+            <button onclick="Next()" id="bnext">Next/Siguiente</button>
+               
+</body>
+
+<script>
+
+
+document.getElementById("bnext").disabled = true;
+
+
+
+const squares = document.querySelectorAll('.square')
+const minicuas = document.querySelectorAll('.minicua')
+
+
+
+  squares[21].classList.add('rayita')
+  squares[22].classList.add('rayita')
+
+  squares[24].classList.add('rayitas')
+  squares[25].classList.add('rayitas')
+  squares[26].classList.add('rayitas')
+  squares[27].classList.add('rayitas')
+
+  squares[44].classList.add('rayitas')
+  squares[45].classList.add('rayitas')
+  squares[46].classList.add('rayitas')
+  squares[47].classList.add('rayitas')
+  squares[48].classList.add('rayitas')
+
+  squares[65].classList.add('rayitas')
+  squares[66].classList.add('rayitas')
+  squares[67].classList.add('rayitas')
+  squares[68].classList.add('rayitas')
+  squares[69].classList.add('rayitas')
+
+  squares[28].classList.add('opvacia')
+  squares[49].classList.add('opvacia')
+  squares[70].classList.add('opvacia')
+
+//Espacio entre el primer y sengundo renglon
+  squares[7].classList.add('rectan')
+  squares[8].classList.add('rectan')
+  squares[9].classList.add('rectan')
+  squares[10].classList.add('rectan')
+  squares[11].classList.add('rectan')
+  squares[12].classList.add('rectan')
+  squares[13].classList.add('rectan')
+
+//espacio entre el resultado
+  squares[23].classList.add('rectan')
+  squares[24].classList.add('rectan')
+  squares[25].classList.add('rectan')
+  squares[26].classList.add('rectan')
+  squares[27].classList.add('rectan')
+
+//espacio entre el primer y segundo resultado
+  squares[42].classList.add('rectan')
+  squares[43].classList.add('rectan')
+  squares[44].classList.add('rectan')
+  squares[45].classList.add('rectan')
+  squares[46].classList.add('rectan')
+  squares[47].classList.add('rectan')
+  squares[48].classList.add('rectan')
+
+// entre el segundo y tercer resultado
+  squares[63].classList.add('rectan')
+  squares[64].classList.add('rectan')
+  squares[65].classList.add('rectan')
+  squares[66].classList.add('rectan')
+  squares[67].classList.add('rectan')
+  squares[68].classList.add('rectan')
+  squares[69].classList.add('rectan')
+
+
+  
+let numu 
+let numd
+let signo
+let rc
+let riu
+let rid
+let pc
+let opsele
+let revisa = 0;
+let llevo = 0;
+let correctos = 0;
+const nudcuen = 10;   
+
+
+//llevo = llevo - 1;
+
+Next()
+
+
+//setTimeout(vgrat, 20000);
+//function vgrat(){
+//alert("\n \nPlease subscribe so you have unlimited time! \n \nPor favor suscribete para que tengas tiempo ilimitado! \n ");
+
+//  location.replace("www.google.com")
+
+}
+
+
+  function Veacasa() {
+
+  let text = "Do you want to leave?\nQuieres salir?";
+  if (confirm(text) == true) {
+    location.replace("www.google.com")
+  } else {
+    
+  }
+    
+                    }
+
+
+    function quitaccarita() {
+        squares[0].classList.remove('buena')
+        squares[0].classList.remove('mala')
+
+ if ( Number(llevo) === Number(nudcuen)) {
+
+  alert("\n \nFinished! / Terminaste! \n \nReturn the device to your parents \n \nRegresa el telefono a tus papas\n \nYour score / Puntos = " + correctos + "/" + (nudcuen) );
+
+  location.replace("www.google.com")
+
+
+    }
+}
+
+    function Next() {
+   
+
+
+    if ( (Number(revisa)) === 1 ) {
+
+   
+
+                if ( ( Number(opsele)) === Number (rc) ) {
+                        squares[0].classList.add('buena')
+                        setTimeout(quitaccarita, 500);
+                        correctos ++;
+                        
+                                   } else {
+
+                        squares[0].classList.add('mala')
+                        setTimeout(quitaccarita, 500);
+
+}
+
+
+llevo ++;
+
+}
+
+
+
+console.log(llevo);
+console.log(correctos);
+console.log("--");
+
+
+squares[28].classList.remove('opllena')
+squares[49].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+
+
+//Selecionando las opciones
+document.getElementById("28").addEventListener("click", agarrau)
+document.getElementById("49").addEventListener("click", agarrad)
+document.getElementById("70").addEventListener("click", agarrat)
+
+
+function agarrau() {
+squares[28].classList.add('opllena')
+squares[49].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+opsele = document.getElementById("29").textContent;
+document.getElementById("bnext").disabled = false;
+revisa = 1;
+//console.log(opsele);
+
+}
+
+function agarrad() {
+    
+squares[49].classList.add('opllena')
+squares[28].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+opsele = document.getElementById("50").textContent;
+document.getElementById("bnext").disabled = false;
+revisa = 1;
+//console.log(opsele);
+
+}
+
+function agarrat() {
+squares[70].classList.add('opllena') 
+squares[49].classList.remove('opllena')
+squares[28].classList.remove('opllena')
+opsele = document.getElementById("71").textContent;
+document.getElementById("bnext").disabled = false;
+revisa = 1;
+//console.log(opsele);
+
+}
+
+//Genera numeros randoms pos1 y pos2
+
+
+                document.getElementById("bnext").disabled = true;
+
+                numu = Math.floor(Math.random() * 6);
+                numd = Math.floor(Math.random() * 6);    
+
+//Generar el signo +/- 0=- 1=+
+
+signo = Math.floor(Math.random() * 2);
+
+
+if ( signo ===0 ) {
+       do {
+        numu = Math.floor(Math.random() * 6);
+        numd = Math.floor(Math.random() * 6); 
+       }
+       while ( numd > numu );
+
+squares[7].classList.add('letgran')
+document.getElementById("7").textContent = ("-");
+
+}
+
+
+//console.log(signo);
+
+//Generando el resultado correcto y los resultados incorrecto
+
+
+
+        if ( signo ===1 ) {
+
+                rc = numu + numd;
+                squares[7].classList.add('letgran')
+                document.getElementById("7").textContent = ("+");
+        }
+
+        if ( signo ===0 ){
+                rc = numu - numd;
+        }        
+
+                riu = Math.floor(Math.random() * 11);
+                rid = Math.floor(Math.random() * 11);
+
+
+    if ((rc === riu) || (rc === rid) || (riu === rid)) {
+           
+                if ((rc >= 0) && (rc <= 8))  {
+
+                    riu = rc+1;
+                    rid = rc+2;
+                }
+                if ((rc === 9) || (rc === 10)) {
+
+                    riu = rc-1;
+                    rid = rc-2;
+                }
+            }
+//donde va a estar posicion correcta
+                pc = (Math.floor(Math.random() * 3)) + 1;
+
+                document.getElementById("1").textContent = numu;
+                document.getElementById("15").textContent = numd;
+//Bolitas para el cambiante de arriba
+
+            if (numu === 5) {
+                squares[2].classList.add('bolita')
+                squares[3].classList.add('bolita')
+                squares[4].classList.add('bolita')
+                squares[5].classList.add('bolita')
+                squares[6].classList.add('bolita')
+
+            } 
+            if (numu === 4) {
+                squares[2].classList.remove('bolita')
+                squares[3].classList.add('bolita')
+                squares[4].classList.add('bolita')
+                squares[5].classList.add('bolita')
+                squares[6].classList.add('bolita')
+
+            } 
+            if (numu === 3) {
+                squares[2].classList.remove('bolita')
+                squares[3].classList.remove('bolita')
+                squares[4].classList.add('bolita')
+                squares[5].classList.add('bolita')
+                squares[6].classList.add('bolita')
+
+            } 
+            if (numu === 2) {
+                squares[2].classList.remove('bolita')
+                squares[3].classList.remove('bolita')
+                squares[4].classList.remove('bolita')
+                squares[5].classList.add('bolita')
+                squares[6].classList.add('bolita')
+
+            } 
+            if (numu === 1) {
+                squares[2].classList.remove('bolita')
+                squares[3].classList.remove('bolita')
+                squares[4].classList.remove('bolita')
+                squares[5].classList.remove('bolita')
+                squares[6].classList.add('bolita')
+
+            }   
+            if (numu === 0) {
+                squares[2].classList.remove('bolita')
+                squares[3].classList.remove('bolita')
+                squares[4].classList.remove('bolita')
+                squares[5].classList.remove('bolita')
+                squares[6].classList.remove('bolita')
+
+            } 
+
+//Bolitas para el cambiante de abajo
+
+            if (numd === 5) {
+                squares[16].classList.add('bolita')
+                squares[17].classList.add('bolita')
+                squares[18].classList.add('bolita')
+                squares[19].classList.add('bolita')
+                squares[20].classList.add('bolita')
+
+            } 
+            if (numd === 4) {
+                squares[16].classList.remove('bolita')
+                squares[17].classList.add('bolita')
+                squares[18].classList.add('bolita')
+                squares[19].classList.add('bolita')
+                squares[20].classList.add('bolita')
+
+            } 
+            if (numd === 3) {
+                squares[16].classList.remove('bolita')
+                squares[17].classList.remove('bolita')
+                squares[18].classList.add('bolita')
+                squares[19].classList.add('bolita')
+                squares[20].classList.add('bolita')
+
+            } 
+            if (numd === 2) {
+                squares[16].classList.remove('bolita')
+                squares[17].classList.remove('bolita')
+                squares[18].classList.remove('bolita')
+                squares[19].classList.add('bolita')
+                squares[20].classList.add('bolita')
+
+            } 
+            if (numd === 1) {
+                squares[16].classList.remove('bolita')
+                squares[17].classList.remove('bolita')
+                squares[18].classList.remove('bolita')
+                squares[19].classList.remove('bolita')
+                squares[20].classList.add('bolita')
+
+            }   
+            if (numd === 0) {
+                squares[16].classList.remove('bolita')
+                squares[17].classList.remove('bolita')
+                squares[18].classList.remove('bolita')
+                squares[19].classList.remove('bolita')
+                squares[20].classList.remove('bolita')
+
+            } 
+
+//Definir al azar donde va a quedar la rc
+
+
+                if (pc === 1 ) {
+                document.getElementById("29").textContent = rc;
+                document.getElementById("50").textContent = riu;
+                document.getElementById("71").textContent = rid;
+                }
+                if (pc === 2 ) {
+                document.getElementById("71").textContent = rc;
+                document.getElementById("29").textContent = riu;
+                document.getElementById("50").textContent = rid;
+                }
+                if (pc === 3 ) {
+                document.getElementById("50").textContent = rc;
+                document.getElementById("71").textContent = riu;
+                document.getElementById("29").textContent = rid;
+                }
+
+
+
+
+
+//Bolitas para el cambiante de abajo posicion 1
+                    let vpu
+                    vpu = document.getElementById("29").textContent;
+
+            if  ( vpu == 10)  {
+                squares[30].classList.add('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.add('bolita')
+                squares[38].classList.add('bolita')
+                squares[39].classList.add('bolita')
+                squares[40].classList.add('bolita')
+                squares[41].classList.add('bolita')
+            }
+            if ( vpu == 9) {
+                squares[30].classList.add('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.add('bolita')
+                squares[39].classList.add('bolita')
+                squares[40].classList.add('bolita')
+                squares[41].classList.add('bolita')
+            }
+            if ( vpu == 8) {
+                squares[30].classList.add('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.add('bolita')
+                squares[40].classList.add('bolita')
+                squares[41].classList.add('bolita')
+            }
+            if ( vpu == 7) {
+                squares[30].classList.add('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.add('bolita')
+                squares[41].classList.add('bolita')
+            }
+            if ( vpu == 6) {
+                 squares[30].classList.add('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.add('bolita')
+            }
+            if ( vpu == 5) {
+                squares[30].classList.add('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.remove('bolita')
+            }
+            if ( vpu == 4) {
+                squares[30].classList.remove('bolita')
+                squares[31].classList.add('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.remove('bolita')
+            }
+            if ( vpu == 3) {
+                squares[30].classList.remove('bolita')
+                squares[31].classList.remove('bolita')
+                squares[32].classList.add('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.remove('bolita')
+            }
+            if ( vpu == 2) {
+                squares[30].classList.remove('bolita')
+                squares[31].classList.remove('bolita')
+                squares[32].classList.remove('bolita')
+                squares[33].classList.add('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.remove('bolita')
+            }
+            if ( vpu == 1) {
+                squares[30].classList.remove('bolita')
+                squares[31].classList.remove('bolita')
+                squares[32].classList.remove('bolita')
+                squares[33].classList.remove('bolita')
+                squares[34].classList.add('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.remove('bolita')
+            }
+             if ( vpu == 0) {
+                squares[30].classList.remove('bolita')
+                squares[31].classList.remove('bolita')
+                squares[32].classList.remove('bolita')
+                squares[33].classList.remove('bolita')
+                squares[34].classList.remove('bolita')
+                squares[37].classList.remove('bolita')
+                squares[38].classList.remove('bolita')
+                squares[39].classList.remove('bolita')
+                squares[40].classList.remove('bolita')
+                squares[41].classList.remove('bolita')
+            }
+
+//Bolitas para el cambiante de abajo posicion 2
+                    let vpd
+                    vpd = document.getElementById("50").textContent;
+
+            if  ( vpd == 10)  {
+                squares[51].classList.add('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.add('bolita')
+                squares[59].classList.add('bolita')
+                squares[60].classList.add('bolita')
+                squares[61].classList.add('bolita')
+                squares[62].classList.add('bolita')
+            }
+            if ( vpd == 9) {
+                squares[51].classList.add('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.add('bolita')
+                squares[60].classList.add('bolita')
+                squares[61].classList.add('bolita')
+                squares[62].classList.add('bolita')
+            }
+            if ( vpd == 8) {
+                squares[51].classList.add('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.add('bolita')
+                squares[61].classList.add('bolita')
+                squares[62].classList.add('bolita')
+            }
+            if ( vpd == 7) {
+                squares[51].classList.add('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.add('bolita')
+                squares[62].classList.add('bolita')
+            }
+            if ( vpd == 6) {
+                squares[51].classList.add('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.add('bolita')
+            }
+            if ( vpd == 5) {
+                squares[51].classList.add('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.remove('bolita')
+            }
+            if ( vpd == 4) {
+                squares[51].classList.remove('bolita')
+                squares[52].classList.add('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.remove('bolita')
+            }
+            if ( vpd == 3) {
+                squares[51].classList.remove('bolita')
+                squares[52].classList.remove('bolita')
+                squares[53].classList.add('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.remove('bolita')
+            }
+            if ( vpd == 2) {
+                squares[51].classList.remove('bolita')
+                squares[52].classList.remove('bolita')
+                squares[53].classList.remove('bolita')
+                squares[54].classList.add('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.remove('bolita')
+            }
+            if ( vpd == 1) {
+                squares[51].classList.remove('bolita')
+                squares[52].classList.remove('bolita')
+                squares[53].classList.remove('bolita')
+                squares[54].classList.remove('bolita')
+                squares[55].classList.add('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.remove('bolita')
+            }
+             if ( vpd == 0) {
+                squares[51].classList.remove('bolita')
+                squares[52].classList.remove('bolita')
+                squares[53].classList.remove('bolita')
+                squares[54].classList.remove('bolita')
+                squares[55].classList.remove('bolita')
+                squares[58].classList.remove('bolita')
+                squares[59].classList.remove('bolita')
+                squares[60].classList.remove('bolita')
+                squares[61].classList.remove('bolita')
+                squares[62].classList.remove('bolita')
+            }
+
+
+            //Bolitas para el cambiante de abajo posicion 3
+                    let vpt
+                    vpt = document.getElementById("71").textContent;
+
+            if  ( vpt == 10)  {
+                squares[72].classList.add('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.add('bolita')
+                squares[80].classList.add('bolita')
+                squares[81].classList.add('bolita')
+                squares[82].classList.add('bolita')
+                squares[83].classList.add('bolita')
+            }
+            if ( vpt == 9) {
+                squares[72].classList.add('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.add('bolita')
+                squares[81].classList.add('bolita')
+                squares[82].classList.add('bolita')
+                squares[83].classList.add('bolita')
+            }
+            if ( vpt == 8) {
+                squares[72].classList.add('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.add('bolita')
+                squares[82].classList.add('bolita')
+                squares[83].classList.add('bolita')
+            }
+            if ( vpt == 7) {
+                squares[72].classList.add('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.add('bolita')
+                squares[83].classList.add('bolita')
+            }
+            if ( vpt == 6) {
+                squares[72].classList.add('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.add('bolita')
+            }
+            if ( vpt == 5) {
+                squares[72].classList.add('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.remove('bolita')
+            }
+            if ( vpt == 4) {
+                squares[72].classList.remove('bolita')
+                squares[73].classList.add('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.remove('bolita')
+            }
+            if ( vpt == 3) {
+                squares[72].classList.remove('bolita')
+                squares[73].classList.remove('bolita')
+                squares[74].classList.add('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.remove('bolita')
+            }
+            if ( vpt == 2) {
+                squares[72].classList.remove('bolita')
+                squares[73].classList.remove('bolita')
+                squares[74].classList.remove('bolita')
+                squares[75].classList.add('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.remove('bolita')
+            }
+            if ( vpt == 1) {
+                squares[72].classList.remove('bolita')
+                squares[73].classList.remove('bolita')
+                squares[74].classList.remove('bolita')
+                squares[75].classList.remove('bolita')
+                squares[76].classList.add('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.remove('bolita')
+            }
+             if ( vpt == 0) {
+                squares[72].classList.remove('bolita')
+                squares[73].classList.remove('bolita')
+                squares[74].classList.remove('bolita')
+                squares[75].classList.remove('bolita')
+                squares[76].classList.remove('bolita')
+                squares[79].classList.remove('bolita')
+                squares[80].classList.remove('bolita')
+                squares[81].classList.remove('bolita')
+                squares[82].classList.remove('bolita')
+                squares[83].classList.remove('bolita')
+            }
+
+
+ 
+squares[28].classList.remove('opllena')
+squares[49].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+
+
+revisa = 0;
+document.getElementById("bnext").disabled = true;
+
+
+
+
+
+
+                        } //este el el fin de la funcion next  
+
+
+</script>
 </html>
