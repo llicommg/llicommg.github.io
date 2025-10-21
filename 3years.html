@@ -72,13 +72,14 @@
 .buena {
 
     background-image: url(
-https://github.com/llicommg/llicommg.github.io/blob/main/correcta.jpg);
+https://llicommg.github.io/correcta.jpg);
+
     background-size: cover;
 }
 .mala {
 
     background-image: url(
-https://github.com/llicommg/llicommg.github.io/blob/main/incorrecta.jpg);
+https://llicommg.github.io/incorrecta.jpg);
     background-size: cover;  
 }
 .letgran {
@@ -278,6 +279,11 @@ let revisa = 0;
 let llevo = 0;
 let correctos = 0;
 const nudcuen = 10;   
+var startime;
+var endtime;
+var timediff;
+let midiendo = 0;
+let tiempodeop = 0;
 
 
 //llevo = llevo - 1;
@@ -313,9 +319,14 @@ Next()
 
  if ( Number(llevo) === Number(nudcuen)) {
 
-  alert("\n \nFinished! / Terminaste! \n \nReturn the device to your parents \n \nRegresa el telefono a tus papas\n \nYour score / Puntos = " + correctos + "/" + (nudcuen) );
+  	 endtime = new Date();
+	 timediff = (endtime - startime)/1000;
+	 tiempodeop = (timediff/nudcuen).toFixed(3);
+    
 
-  location.replace("https://github.com/llicommg/llicommg.github.io/blob/main/correcta.jpg")
+alert("\n \nFinished! / Terminaste! \n \nReturn the device to your parents \n \nRegresa el telefono a tus papas\n \nYour score / Puntos = " + correctos + "/" + (nudcuen) + "\n \nTime / Tiempo =" + timediff + " s");
+
+   location.replace("https://llicommg.github.io/Welcomepage.html")
 
 
     }
@@ -372,6 +383,11 @@ opsele = document.getElementById("29").textContent;
 document.getElementById("bnext").disabled = false;
 revisa = 1;
 //console.log(opsele);
+//empezar a medir el tiempo que tarda en hacerlos
+            if (midiendo == 0) {
+            startime = new Date();  
+            midiendo = 1;   
+            }
 
 }
 
@@ -384,6 +400,11 @@ opsele = document.getElementById("50").textContent;
 document.getElementById("bnext").disabled = false;
 revisa = 1;
 //console.log(opsele);
+//empezar a medir el tiempo que tarda en hacerlos
+            if (midiendo == 0) {
+            startime = new Date();  
+            midiendo = 1;   
+            }
 
 }
 
@@ -395,6 +416,11 @@ opsele = document.getElementById("71").textContent;
 document.getElementById("bnext").disabled = false;
 revisa = 1;
 //console.log(opsele);
+//empezar a medir el tiempo que tarda en hacerlos
+            if (midiendo == 0) {
+            startime = new Date();  
+            midiendo = 1;   
+            }
 
 }
 
