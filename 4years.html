@@ -1,1 +1,2442 @@
+<!DOCTYPE html>
 
+<html>
+<head>
+<style> 
+
+
+</style>
+
+<style>
+
+.grid {
+
+
+   
+    height: 450px;
+    width: 294px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.square{
+
+    height: 40px;
+    width:  40px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+
+.rectan{
+
+    height: 20px;
+    width:  40px;
+ 
+}
+
+
+.bolita {
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.minibolita {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+.rayita {
+    
+    height: 2px;
+    width:  40px;
+    background-color: black;
+  
+}
+.rayitas {
+    
+    height: 1px;
+    width:  40px;
+    background-color: black;
+  
+}
+
+.opvacia {
+ 
+    border: 1px solid;
+    border-radius: 40px;
+
+}
+
+.opllena {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.buena {
+
+    background-image: url(https://llicommg.github.io/correcta.jpg);
+    background-size: cover;
+}
+.mala {
+
+    background-image: url(https://llicommg.github.io/incorrecta.jpg);
+    background-size: cover;  
+}
+.letgran {
+    font-size: 40px;
+}
+.minicua{
+    height: 20px;
+    width:  20px;
+    
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+    <h2>Select the Right one / Elige la correcta</h2>
+    
+
+<div class ="grid">
+   <div class = "square" id="0"></div>
+   <div class = "square" id="1"></div>
+   <div class = "square" id="2">
+        <div class = "minicua" id="mc1"></div>
+        <div class = "minicua" id="mc2"></div>
+        <div class = "minicua" id="mc3"></div>
+        <div class = "minicua" id="mc4"></div>
+    </div>
+   <div class = "square" id="3">
+        <div class = "minicua" id="mc5"></div>
+        <div class = "minicua" id="mc6"></div>
+        <div class = "minicua" id="mc7"></div>
+        <div class = "minicua" id="mc8"></div>
+    </div>
+   <div class = "square" id="4">
+        <div class = "minicua" id="mc9"></div>
+        <div class = "minicua" id="mc10"></div>
+        <div class = "minicua" id="mc11"></div>
+        <div class = "minicua" id="mc12"></div>
+   </div>
+   <div class = "square" id="5">
+        <div class = "minicua" id="mc13"></div>
+        <div class = "minicua" id="mc14"></div>
+        <div class = "minicua" id="mc15"></div>
+        <div class = "minicua" id="mc16"></div>
+   </div>
+   <div class = "square" id="6">
+        <div class = "minicua" id="mc17"></div>
+        <div class = "minicua" id="mc18"></div>
+        <div class = "minicua" id="mc19"></div>
+        <div class = "minicua" id="mc20"></div>
+   </div>
+   <div class = "square" id="7"></div>
+   <div class = "square" id="8"></div>
+   <div class = "square" id="9"></div>
+   <div class = "square" id="10"></div>
+   <div class = "square" id="11"></div>
+   <div class = "square" id="12"></div>
+   <div class = "square" id="13"></div>
+   <div class = "square" id="14"></div>
+   <div class = "square" id="15"></div>
+   <div class = "square" id="16">
+        <div class = "minicua" id="mc21"></div>
+        <div class = "minicua" id="mc22"></div>
+        <div class = "minicua" id="mc23"></div>
+        <div class = "minicua" id="mc24"></div>
+</div>
+   <div class = "square" id="17">
+        <div class = "minicua" id="mc25"></div>
+        <div class = "minicua" id="mc26"></div>
+        <div class = "minicua" id="mc27"></div>
+        <div class = "minicua" id="mc28"></div>
+   </div>
+   <div class = "square" id="18">
+        <div class = "minicua" id="mc29"></div>
+        <div class = "minicua" id="mc30"></div>
+        <div class = "minicua" id="mc31"></div>
+        <div class = "minicua" id="mc32"></div>
+   </div>
+   <div class = "square" id="19">
+        <div class = "minicua" id="mc33"></div>
+        <div class = "minicua" id="mc34"></div>
+        <div class = "minicua" id="mc35"></div>
+        <div class = "minicua" id="mc36"></div>
+   </div>
+   <div class = "square" id="20">
+        <div class = "minicua" id="mc37"></div>
+        <div class = "minicua" id="mc38"></div>
+        <div class = "minicua" id="mc39"></div>
+        <div class = "minicua" id="mc40"></div>
+   </div>
+   <div class = "square" id="21"></div>
+   <div class = "square" id="22"></div>
+   <div class = "square" id="23"></div>
+   <div class = "square" id="24"></div>
+   <div class = "square" id="25"></div>
+   <div class = "square" id="26"></div>
+   <div class = "square" id="27"></div>
+   <div class = "square" id="28"></div>
+   <div class = "square" id="29"></div>
+   <div class = "square" id="30">
+        <div class = "minicua" id="mc41"></div>
+        <div class = "minicua" id="mc42"></div>
+        <div class = "minicua" id="mc43"></div>
+        <div class = "minicua" id="mc44"></div>
+   </div>
+   <div class = "square" id="31">
+        <div class = "minicua" id="mc45"></div>
+        <div class = "minicua" id="mc46"></div>
+        <div class = "minicua" id="mc47"></div>
+        <div class = "minicua" id="mc48"></div>
+   </div>
+   <div class = "square" id="32">
+        <div class = "minicua" id="mc49"></div>
+        <div class = "minicua" id="mc50"></div>
+        <div class = "minicua" id="mc51"></div>
+        <div class = "minicua" id="mc52"></div>
+   </div>
+   <div class = "square" id="33">
+        <div class = "minicua" id="mc53"></div>
+        <div class = "minicua" id="mc54"></div>
+        <div class = "minicua" id="mc55"></div>
+        <div class = "minicua" id="mc56"></div>
+   </div>
+   <div class = "square" id="34">
+        <div class = "minicua" id="mc57"></div>
+        <div class = "minicua" id="mc58"></div>
+        <div class = "minicua" id="mc59"></div>
+        <div class = "minicua" id="mc60"></div>
+   </div>
+   <div class = "square" id="35"></div>
+   <div class = "square" id="36"></div>
+   <div class = "square" id="37">
+        <div class = "minicua" id="mc61"></div>
+        <div class = "minicua" id="mc62"></div>
+        <div class = "minicua" id="mc63"></div>
+        <div class = "minicua" id="mc64"></div>
+   </div>
+   <div class = "square" id="38">
+        <div class = "minicua" id="mc65"></div>
+        <div class = "minicua" id="mc66"></div>
+        <div class = "minicua" id="mc67"></div>
+        <div class = "minicua" id="mc68"></div>
+   </div>
+   <div class = "square" id="39">
+        <div class = "minicua" id="mc69"></div>
+        <div class = "minicua" id="mc70"></div>
+        <div class = "minicua" id="mc71"></div>
+        <div class = "minicua" id="mc72"></div>
+    </div>
+   <div class = "square" id="40">
+        <div class = "minicua" id="mc73"></div>
+        <div class = "minicua" id="mc74"></div>
+        <div class = "minicua" id="mc75"></div>
+        <div class = "minicua" id="mc76"></div>
+   </div>
+   <div class = "square" id="41">
+        <div class = "minicua" id="mc77"></div>
+        <div class = "minicua" id="mc78"></div>
+        <div class = "minicua" id="mc79"></div>
+        <div class = "minicua" id="mc80"></div>
+   </div>
+   <div class = "square" id="42"></div>
+   <div class = "square" id="43"></div>
+   <div class = "square" id="44"></div>
+   <div class = "square" id="45"></div>
+   <div class = "square" id="46"></div>
+   <div class = "square" id="47"></div>
+   <div class = "square" id="48"></div>
+   <div class = "square" id="49"></div>
+   <div class = "square" id="50"></div>
+   <div class = "square" id="51">
+        <div class = "minicua" id="mc85"></div>
+        <div class = "minicua" id="mc86"></div>
+        <div class = "minicua" id="mc87"></div>
+        <div class = "minicua" id="mc88"></div>      
+   </div>
+   <div class = "square" id="52">
+        <div class = "minicua" id="mc89"></div>
+        <div class = "minicua" id="mc90"></div>
+        <div class = "minicua" id="mc91"></div>
+        <div class = "minicua" id="mc92"></div> 
+   </div>
+   <div class = "square" id="53">
+        <div class = "minicua" id="mc93"></div>
+        <div class = "minicua" id="mc94"></div>
+        <div class = "minicua" id="mc95"></div>
+        <div class = "minicua" id="mc96"></div> 
+   </div>
+   <div class = "square" id="54">
+        <div class = "minicua" id="mc97"></div>
+        <div class = "minicua" id="mc98"></div>
+        <div class = "minicua" id="mc99"></div>
+        <div class = "minicua" id="mc100"></div> 
+   </div>
+   <div class = "square" id="55">
+        <div class = "minicua" id="mc101"></div>
+        <div class = "minicua" id="mc102"></div>
+        <div class = "minicua" id="mc103"></div>
+        <div class = "minicua" id="mc104"></div> 
+   </div>
+   <div class = "square" id="56"></div>
+   <div class = "square" id="57"></div>
+   <div class = "square" id="58">
+        <div class = "minicua" id="mc105"></div>
+        <div class = "minicua" id="mc106"></div>
+        <div class = "minicua" id="mc107"></div>
+        <div class = "minicua" id="mc108"></div>     
+   </div>
+   <div class = "square" id="59">
+        <div class = "minicua" id="mc109"></div>
+        <div class = "minicua" id="mc110"></div>
+        <div class = "minicua" id="mc111"></div>
+        <div class = "minicua" id="mc112"></div> 
+   </div>
+   <div class = "square" id="60">
+        <div class = "minicua" id="mc113"></div>
+        <div class = "minicua" id="mc114"></div>
+        <div class = "minicua" id="mc115"></div>
+        <div class = "minicua" id="mc116"></div> 
+   </div>
+   <div class = "square" id="61">
+        <div class = "minicua" id="mc117"></div>
+        <div class = "minicua" id="mc118"></div>
+        <div class = "minicua" id="mc119"></div>
+        <div class = "minicua" id="mc120"></div> 
+   </div>
+   <div class = "square" id="62">
+        <div class = "minicua" id="mc121"></div>
+        <div class = "minicua" id="mc122"></div>
+        <div class = "minicua" id="mc123"></div>
+        <div class = "minicua" id="mc124"></div>
+   </div>
+   <div class = "square" id="63"></div>
+   <div class = "square" id="64"></div>
+   <div class = "square" id="65"></div>
+   <div class = "square" id="66"></div>
+   <div class = "square" id="67"></div>
+   <div class = "square" id="68"></div>
+   <div class = "square" id="69"></div>
+   <div class = "square" id="70"></div>
+   <div class = "square" id="71"></div>
+   <div class = "square" id="72">
+        <div class = "minicua" id="mc125"></div>
+        <div class = "minicua" id="mc126"></div>
+        <div class = "minicua" id="mc127"></div>
+        <div class = "minicua" id="mc128"></div>
+   </div>
+   <div class = "square" id="73">
+        <div class = "minicua" id="mc130"></div>
+        <div class = "minicua" id="mc131"></div>
+        <div class = "minicua" id="mc132"></div>
+        <div class = "minicua" id="mc133"></div>
+   </div>
+   <div class = "square" id="74">
+        <div class = "minicua" id="mc134"></div>
+        <div class = "minicua" id="mc135"></div>
+        <div class = "minicua" id="mc136"></div>
+        <div class = "minicua" id="mc137"></div>
+   </div>
+   <div class = "square" id="75">
+        <div class = "minicua" id="mc138"></div>
+        <div class = "minicua" id="mc140"></div>
+        <div class = "minicua" id="mc141"></div>
+        <div class = "minicua" id="mc142"></div>
+   </div>
+   <div class = "square" id="76">
+        <div class = "minicua" id="mc143"></div>
+        <div class = "minicua" id="mc144"></div>
+        <div class = "minicua" id="mc145"></div>
+        <div class = "minicua" id="mc146"></div>
+   </div>
+   <div class = "square" id="77"></div>
+   <div class = "square" id="78"></div>
+   <div class = "square" id="79">
+        <div class = "minicua" id="mc147"></div>
+        <div class = "minicua" id="mc148"></div>
+        <div class = "minicua" id="mc149"></div>
+        <div class = "minicua" id="mc150"></div>
+   </div>
+   <div class = "square" id="80">
+        <div class = "minicua" id="mc147"></div>
+        <div class = "minicua" id="mc148"></div>
+        <div class = "minicua" id="mc149"></div>
+        <div class = "minicua" id="mc150"></div>       
+   </div>
+   <div class = "square" id="81">
+        <div class = "minicua" id="mc147"></div>
+        <div class = "minicua" id="mc148"></div>
+        <div class = "minicua" id="mc149"></div>
+        <div class = "minicua" id="mc150"></div>
+   </div>
+   <div class = "square" id="82">
+        <div class = "minicua" id="mc147"></div>
+        <div class = "minicua" id="mc148"></div>
+        <div class = "minicua" id="mc149"></div>
+        <div class = "minicua" id="mc150"></div>
+   </div>
+   <div class = "square" id="83">
+        <div class = "minicua" id="mc147"></div>
+        <div class = "minicua" id="mc148"></div>
+        <div class = "minicua" id="mc149"></div>
+        <div class = "minicua" id="mc150"></div>
+   </div>
+
+</div>
+
+
+
+            <button onclick="Veacasa()">Home</button>
+                
+            <button onclick="Next()" id="bnext">Next/Siguiente</button>
+               
+</body>
+
+<script>
+
+
+document.getElementById("bnext").disabled = true;
+
+
+
+const squares = document.querySelectorAll('.square')
+const minicuas = document.querySelectorAll('.minicua')
+
+
+
+  squares[21].classList.add('rayita')
+  squares[22].classList.add('rayita')
+
+  squares[24].classList.add('rayitas')
+  squares[25].classList.add('rayitas')
+  squares[26].classList.add('rayitas')
+  squares[27].classList.add('rayitas')
+
+  squares[44].classList.add('rayitas')
+  squares[45].classList.add('rayitas')
+  squares[46].classList.add('rayitas')
+  squares[47].classList.add('rayitas')
+  squares[48].classList.add('rayitas')
+
+  squares[65].classList.add('rayitas')
+  squares[66].classList.add('rayitas')
+  squares[67].classList.add('rayitas')
+  squares[68].classList.add('rayitas')
+  squares[69].classList.add('rayitas')
+
+  squares[28].classList.add('opvacia')
+  squares[49].classList.add('opvacia')
+  squares[70].classList.add('opvacia')
+
+//Espacio entre el primer y sengundo renglon
+  squares[7].classList.add('rectan')
+  squares[8].classList.add('rectan')
+  squares[9].classList.add('rectan')
+  squares[10].classList.add('rectan')
+  squares[11].classList.add('rectan')
+  squares[12].classList.add('rectan')
+  squares[13].classList.add('rectan')
+
+//espacio entre el resultado
+  squares[23].classList.add('rectan')
+  squares[24].classList.add('rectan')
+  squares[25].classList.add('rectan')
+  squares[26].classList.add('rectan')
+  squares[27].classList.add('rectan')
+
+//espacio entre el primer y segundo resultado
+  squares[42].classList.add('rectan')
+  squares[43].classList.add('rectan')
+  squares[44].classList.add('rectan')
+  squares[45].classList.add('rectan')
+  squares[46].classList.add('rectan')
+  squares[47].classList.add('rectan')
+  squares[48].classList.add('rectan')
+
+// entre el segundo y tercer resultado
+  squares[63].classList.add('rectan')
+  squares[64].classList.add('rectan')
+  squares[65].classList.add('rectan')
+  squares[66].classList.add('rectan')
+  squares[67].classList.add('rectan')
+  squares[68].classList.add('rectan')
+  squares[69].classList.add('rectan')
+
+
+  
+let numu 
+let numd
+let signo
+let rc
+let riu
+let rid
+let pc
+let opsele
+let revisa = 0;
+let llevo = 0;
+let correctos = 0;
+const nudcuen = 10;   
+var startime;
+var endtime;
+var timediff;
+let midiendo = 0;
+let tiempodeop = 0;   
+
+
+//llevo = llevo - 1;
+
+Next()
+
+
+//setTimeout(vgrat, 20000);
+//function vgrat(){
+//alert("\n \nPlease subscribe so you have unlimited time! \n \nPor favor suscribete para que tengas tiempo ilimitado! \n ");
+
+//  location.replace("https://makemykidsmarter.com/?page_id=146")
+
+//}
+
+
+  function Veacasa() {
+
+  let text = "Do you want to leave?\nQuieres salir?";
+  if (confirm(text) == true) {
+     location.replace("https://llicommg.github.io/Welcomepage.html")
+  } else {
+    
+  }
+    
+                    }
+
+
+    function quitaccarita() {
+        squares[0].classList.remove('buena')
+        squares[0].classList.remove('mala')
+
+ if ( Number(llevo) === Number(nudcuen)) {
+
+      endtime = new Date();
+      timediff = (endtime - startime)/1000;
+      tiempodeop = (timediff/nudcuen).toFixed(3);
+
+     alert("\n \nFinished! / Terminaste! \n \nReturn the device to your parents \n \nRegresa el telefono a tus papas\n \nYour score / Puntos = " + correctos + "/" + (nudcuen) + "\n \nTime / Tiempo =" + timediff + " s");
+
+     location.replace("https://llicommg.github.io/Welcomepage.html")
+
+
+
+    }
+}
+
+    function Next() {
+   
+
+
+    if ( (Number(revisa)) === 1 ) {
+
+   
+
+                if ( ( Number(opsele)) === Number (rc) ) {
+                        squares[0].classList.add('buena')
+                        setTimeout(quitaccarita, 500);
+                        correctos ++;
+                        
+                                   } else {
+
+                        squares[0].classList.add('mala')
+                        setTimeout(quitaccarita, 500);
+
+}
+
+
+llevo ++;
+
+}
+
+
+/*console.log(llevo);
+console.log(correctos);
+console.log("--");*/
+
+
+squares[28].classList.remove('opllena')
+squares[49].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+
+
+//Selecionando las opciones
+document.getElementById("28").addEventListener("click", agarrau)
+document.getElementById("49").addEventListener("click", agarrad)
+document.getElementById("70").addEventListener("click", agarrat)
+
+
+function agarrau() {
+squares[28].classList.add('opllena')
+squares[49].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+opsele = document.getElementById("29").textContent;
+document.getElementById("bnext").disabled = false;
+revisa = 1;
+            if (midiendo == 0) {
+            startime = new Date();  
+            midiendo = 1;   
+            }
+
+}
+
+function agarrad() {
+    
+squares[49].classList.add('opllena')
+squares[28].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+opsele = document.getElementById("50").textContent;
+document.getElementById("bnext").disabled = false;
+revisa = 1;
+            if (midiendo == 0) {
+            startime = new Date();  
+            midiendo = 1;   
+            }
+
+}
+
+function agarrat() {
+squares[70].classList.add('opllena') 
+squares[49].classList.remove('opllena')
+squares[28].classList.remove('opllena')
+opsele = document.getElementById("71").textContent;
+document.getElementById("bnext").disabled = false;
+revisa = 1;
+            if (midiendo == 0) {
+            startime = new Date();  
+            midiendo = 1;   
+            }
+
+}
+
+//Genera numeros randoms pos1 y pos2
+
+
+                document.getElementById("bnext").disabled = true;
+
+                numu = Math.floor(Math.random() * 11);
+                numd = Math.floor(Math.random() * 11);    
+                
+//Generar el signo +/- 0=- 1=+
+
+signo = Math.floor(Math.random() * 2);
+
+
+if ( signo ===0 ) {
+       do {
+        numu = Math.floor(Math.random() * 11);
+        numd = Math.floor(Math.random() * 11); 
+       }
+       while ( numd > numu );
+
+squares[7].classList.add('letgran')
+document.getElementById("7").textContent = ("-");
+
+}
+
+
+//console.log(signo);
+
+//Generando el resultado correcto y los resultados incorrecto
+
+
+
+        if ( signo ===1 ) {
+
+                rc = numu + numd;
+                squares[7].classList.add('letgran')
+                document.getElementById("7").textContent = ("+");
+        }
+
+        if ( signo ===0 ){
+                rc = numu - numd;
+        }        
+
+                riu = Math.floor(Math.random() * 21);
+                rid = Math.floor(Math.random() * 21);
+
+
+    if ((rc === riu) || (rc === rid) || (riu === rid)) {
+           
+                if ((rc >= 0) && (rc <= 8))  {
+
+                    riu = rc+1;
+                    rid = rc+2;
+                }
+                if ((rc === 9) || (rc === 10)) {
+
+                    riu = rc-1;
+                    rid = rc-2;
+                }
+            }
+//donde va a estar posicion correcta
+                pc = (Math.floor(Math.random() * 3)) + 1;
+
+                document.getElementById("1").textContent = numu;
+                document.getElementById("15").textContent = numd;
+//Bolitas para el cambiante de arriba
+
+            if (numu === 10) {
+                minicuas[1].classList.add('minibolita')
+                minicuas[2].classList.add('minibolita')
+                minicuas[5].classList.add('minibolita')
+                minicuas[6].classList.add('minibolita')
+                minicuas[9].classList.add('minibolita')
+                minicuas[10].classList.add('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+            }
+
+            if (numu === 9) {
+                minicuas[1].classList.add('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.add('minibolita')
+                minicuas[6].classList.add('minibolita')
+                minicuas[9].classList.add('minibolita')
+                minicuas[10].classList.add('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+            if (numu === 8) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.add('minibolita')
+                minicuas[6].classList.add('minibolita')
+                minicuas[9].classList.add('minibolita')
+                minicuas[10].classList.add('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+            if (numu === 7) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.add('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.add('minibolita')
+                minicuas[10].classList.add('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+            if (numu === 6) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.add('minibolita')
+                minicuas[10].classList.add('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+
+            if (numu === 5) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.add('minibolita')
+                minicuas[10].classList.remove('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+
+            
+            if (numu === 4) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.remove('minibolita')
+                minicuas[10].classList.remove('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.add('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+            
+            if (numu === 3) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.remove('minibolita')
+                minicuas[10].classList.remove('minibolita')
+                minicuas[13].classList.add('minibolita')
+                minicuas[14].classList.remove('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+            
+            if (numu === 2) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.remove('minibolita')
+                minicuas[10].classList.remove('minibolita')
+                minicuas[13].classList.remove('minibolita')
+                minicuas[14].classList.remove('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.add('minibolita')
+                }
+
+            
+            if (numu === 1) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.remove('minibolita')
+                minicuas[10].classList.remove('minibolita')
+                minicuas[13].classList.remove('minibolita')
+                minicuas[14].classList.remove('minibolita')
+                minicuas[17].classList.add('minibolita')
+                minicuas[18].classList.remove('minibolita')
+                }
+
+             
+            if (numu === 0) {
+                minicuas[1].classList.remove('minibolita')
+                minicuas[2].classList.remove('minibolita')
+                minicuas[5].classList.remove('minibolita')
+                minicuas[6].classList.remove('minibolita')
+                minicuas[9].classList.remove('minibolita')
+                minicuas[10].classList.remove('minibolita')
+                minicuas[13].classList.remove('minibolita')
+                minicuas[14].classList.remove('minibolita')
+                minicuas[17].classList.remove('minibolita')
+                minicuas[18].classList.remove('minibolita')
+
+            } 
+
+//Bolitas para el cambiante de abajo
+
+            if (numd === 10) {
+                minicuas[21].classList.add('minibolita')
+                minicuas[22].classList.add('minibolita')
+                minicuas[25].classList.add('minibolita')
+                minicuas[26].classList.add('minibolita')
+                minicuas[29].classList.add('minibolita')
+                minicuas[30].classList.add('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+            }
+
+            if (numd === 9) {
+                minicuas[21].classList.add('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.add('minibolita')
+                minicuas[26].classList.add('minibolita')
+                minicuas[29].classList.add('minibolita')
+                minicuas[30].classList.add('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+            if (numd === 8) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.add('minibolita')
+                minicuas[26].classList.add('minibolita')
+                minicuas[29].classList.add('minibolita')
+                minicuas[30].classList.add('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+            if (numd === 7) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.add('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.add('minibolita')
+                minicuas[30].classList.add('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+            if (numd === 6) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.add('minibolita')
+                minicuas[30].classList.add('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+
+            if (numd === 5) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.add('minibolita')
+                minicuas[30].classList.remove('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+
+            
+            if (numd === 4) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.remove('minibolita')
+                minicuas[30].classList.remove('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.add('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+            
+            if (numd === 3) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.remove('minibolita')
+                minicuas[30].classList.remove('minibolita')
+                minicuas[33].classList.add('minibolita')
+                minicuas[34].classList.remove('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+            
+            if (numd === 2) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.remove('minibolita')
+                minicuas[30].classList.remove('minibolita')
+                minicuas[33].classList.remove('minibolita')
+                minicuas[34].classList.remove('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.add('minibolita')
+                }
+
+            
+            if (numd === 1) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.remove('minibolita')
+                minicuas[30].classList.remove('minibolita')
+                minicuas[33].classList.remove('minibolita')
+                minicuas[34].classList.remove('minibolita')
+                minicuas[37].classList.add('minibolita')
+                minicuas[38].classList.remove('minibolita')
+                }
+
+             
+            if (numd === 0) {
+                minicuas[21].classList.remove('minibolita')
+                minicuas[22].classList.remove('minibolita')
+                minicuas[25].classList.remove('minibolita')
+                minicuas[26].classList.remove('minibolita')
+                minicuas[29].classList.remove('minibolita')
+                minicuas[30].classList.remove('minibolita')
+                minicuas[33].classList.remove('minibolita')
+                minicuas[34].classList.remove('minibolita')
+                minicuas[37].classList.remove('minibolita')
+                minicuas[38].classList.remove('minibolita')
+
+            } 
+
+//Definir al azar donde va a quedar la rc
+
+
+                if (pc === 1 ) {
+                document.getElementById("29").textContent = rc;
+                document.getElementById("50").textContent = riu;
+                document.getElementById("71").textContent = rid;
+                }
+                if (pc === 2 ) {
+                document.getElementById("71").textContent = rc;
+                document.getElementById("29").textContent = riu;
+                document.getElementById("50").textContent = rid;
+                }
+                if (pc === 3 ) {
+                document.getElementById("50").textContent = rc;
+                document.getElementById("71").textContent = riu;
+                document.getElementById("29").textContent = rid;
+                }
+
+
+
+
+
+//Bolitas para el cambiante de abajo posicion 1
+                    var vpu
+                vpu = document.getElementById("29").textContent;
+                  
+
+            if  ( vpu == 20 )  {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.add('minibolita')
+                minicuas[62].classList.add('minibolita')
+                minicuas[65].classList.add('minibolita')
+                minicuas[66].classList.add('minibolita')
+                minicuas[69].classList.add('minibolita')
+                minicuas[70].classList.add('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita')  
+            } 
+             if  ( vpu == 19 )  {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.add('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.add('minibolita')
+                minicuas[66].classList.add('minibolita')
+                minicuas[69].classList.add('minibolita')
+                minicuas[70].classList.add('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita')  
+            }
+            if  ( vpu == 18 )  {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.add('minibolita')
+                minicuas[66].classList.add('minibolita')
+                minicuas[69].classList.add('minibolita')
+                minicuas[70].classList.add('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita')  
+            }
+            if ( vpu == 17 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.add('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.add('minibolita')
+                minicuas[70].classList.add('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita')  
+            }
+            if ( vpu == 16 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.add('minibolita')
+                minicuas[70].classList.add('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita')  
+            }
+            if ( vpu == 15 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.add('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita')  
+            }
+            if ( vpu == 14 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.add('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita') 
+            }
+            if ( vpu == 13 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.add('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita') 
+            }
+            if ( vpu == 12 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.add('minibolita') 
+            }
+            if ( vpu == 11 ) {
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.add('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+             if ( vpu == 10 ) {
+               minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.add('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+            if ( vpu == 9 ) {
+                minicuas[41].classList.add('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+            if ( vpu == 8 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.add('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita')  
+            }
+            if ( vpu == 7 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.add('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+            if ( vpu == 6 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.add('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+            if ( vpu == 5 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.add('minibolita')
+                minicuas[50].classList.remove('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+            if ( vpu == 4 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.remove('minibolita')
+                minicuas[50].classList.remove('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.add('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita') 
+            }
+            if ( vpu == 3 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.remove('minibolita')
+                minicuas[50].classList.remove('minibolita')
+                minicuas[53].classList.add('minibolita')
+                minicuas[54].classList.remove('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita')  
+            }
+            if ( vpu == 2 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.remove('minibolita')
+                minicuas[50].classList.remove('minibolita')
+                minicuas[53].classList.remove('minibolita')
+                minicuas[54].classList.remove('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.add('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita')  
+            }
+            if ( vpu == 1 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.remove('minibolita')
+                minicuas[50].classList.remove('minibolita')
+                minicuas[53].classList.remove('minibolita')
+                minicuas[54].classList.remove('minibolita')
+                minicuas[57].classList.add('minibolita')
+                minicuas[58].classList.remove('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita')  
+            }
+            if ( vpu == 0 ) {
+                minicuas[41].classList.remove('minibolita')
+                minicuas[42].classList.remove('minibolita')
+                minicuas[45].classList.remove('minibolita')
+                minicuas[46].classList.remove('minibolita')
+                minicuas[49].classList.remove('minibolita')
+                minicuas[50].classList.remove('minibolita')
+                minicuas[53].classList.remove('minibolita')
+                minicuas[54].classList.remove('minibolita')
+                minicuas[57].classList.remove('minibolita')
+                minicuas[58].classList.remove('minibolita')
+                minicuas[61].classList.remove('minibolita')
+                minicuas[62].classList.remove('minibolita')
+                minicuas[65].classList.remove('minibolita')
+                minicuas[66].classList.remove('minibolita')
+                minicuas[69].classList.remove('minibolita')
+                minicuas[70].classList.remove('minibolita')
+                minicuas[73].classList.remove('minibolita')
+                minicuas[74].classList.remove('minibolita')
+                minicuas[77].classList.remove('minibolita')
+                minicuas[78].classList.remove('minibolita')  
+            }
+
+//Bolitas para el cambiante de abajo posicion 2
+                    let vpd
+                   vpd = document.getElementById("50").textContent;
+console.log (vpd);
+
+            if  ( vpd == 20 )  {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.add('minibolita')
+                minicuas[102].classList.add('minibolita')
+                minicuas[105].classList.add('minibolita')
+                minicuas[106].classList.add('minibolita')
+                minicuas[109].classList.add('minibolita')
+                minicuas[110].classList.add('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita')  
+            } 
+             if  ( vpd == 19 )  {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.add('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.add('minibolita')
+                minicuas[106].classList.add('minibolita')
+                minicuas[109].classList.add('minibolita')
+                minicuas[110].classList.add('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita')  
+            }
+            if  ( vpd == 18 )  {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.add('minibolita')
+                minicuas[106].classList.add('minibolita')
+                minicuas[109].classList.add('minibolita')
+                minicuas[110].classList.add('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita')  
+            }
+            if ( vpd == 17 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.add('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.add('minibolita')
+                minicuas[110].classList.add('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita')  
+            }
+            if ( vpd == 16 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.add('minibolita')
+                minicuas[110].classList.add('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita')  
+            }
+            if ( vpd == 15 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.add('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita')  
+            }
+            if ( vpd == 14 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.add('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita') 
+            }
+            if ( vpd == 13 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.add('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita') 
+            }
+            if ( vpd == 12 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.add('minibolita') 
+            }
+            if ( vpd == 11 ) {
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.add('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+             if ( vpd == 10 ) {
+               minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.add('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+            if ( vpd == 9 ) {
+                minicuas[81].classList.add('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+            if ( vpd == 8 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.add('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita')  
+            }
+            if ( vpd == 7 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.add('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+            if ( vpd == 6 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.add('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+            if ( vpd == 5 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.add('minibolita')
+                minicuas[90].classList.remove('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+            if ( vpd == 4 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.remove('minibolita')
+                minicuas[90].classList.remove('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.add('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita') 
+            }
+            if ( vpd == 3 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.remove('minibolita')
+                minicuas[90].classList.remove('minibolita')
+                minicuas[93].classList.add('minibolita')
+                minicuas[94].classList.remove('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita')  
+            }
+            if ( vpd == 2 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.remove('minibolita')
+                minicuas[90].classList.remove('minibolita')
+                minicuas[93].classList.remove('minibolita')
+                minicuas[94].classList.remove('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.add('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita')  
+            }
+            if ( vpd == 1 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.remove('minibolita')
+                minicuas[90].classList.remove('minibolita')
+                minicuas[93].classList.remove('minibolita')
+                minicuas[94].classList.remove('minibolita')
+                minicuas[97].classList.add('minibolita')
+                minicuas[98].classList.remove('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita')  
+            }
+            if ( vpd == 0 ) {
+                minicuas[81].classList.remove('minibolita')
+                minicuas[82].classList.remove('minibolita')
+                minicuas[85].classList.remove('minibolita')
+                minicuas[86].classList.remove('minibolita')
+                minicuas[89].classList.remove('minibolita')
+                minicuas[90].classList.remove('minibolita')
+                minicuas[93].classList.remove('minibolita')
+                minicuas[94].classList.remove('minibolita')
+                minicuas[97].classList.remove('minibolita')
+                minicuas[98].classList.remove('minibolita')
+                minicuas[101].classList.remove('minibolita')
+                minicuas[102].classList.remove('minibolita')
+                minicuas[105].classList.remove('minibolita')
+                minicuas[106].classList.remove('minibolita')
+                minicuas[109].classList.remove('minibolita')
+                minicuas[110].classList.remove('minibolita')
+                minicuas[113].classList.remove('minibolita')
+                minicuas[114].classList.remove('minibolita')
+                minicuas[117].classList.remove('minibolita')
+                minicuas[118].classList.remove('minibolita')  
+            }
+
+
+            //Bolitas para el cambiante de abajo posicion 3
+                    let vpt
+                    vpt = document.getElementById("71").textContent; 
+
+            if  ( vpt == 20 )  {                
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.add('minibolita')               
+                minicuas[142].classList.add('minibolita')               
+                minicuas[145].classList.add('minibolita')               
+                minicuas[146].classList.add('minibolita')               
+                minicuas[149].classList.add('minibolita')               
+                minicuas[150].classList.add('minibolita')               
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+             if  ( vpt == 19 )  {               
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.add('minibolita')               
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.add('minibolita')               
+                minicuas[146].classList.add('minibolita')               
+                minicuas[149].classList.add('minibolita')               
+                minicuas[150].classList.add('minibolita')               
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if  ( vpt == 18 )  {                
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.add('minibolita')               
+                minicuas[146].classList.add('minibolita')               
+                minicuas[149].classList.add('minibolita')               
+                minicuas[150].classList.add('minibolita')               
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 17 ) {              
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.add('minibolita')               
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.add('minibolita')               
+                minicuas[150].classList.add('minibolita')               
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 16 ) {              
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.add('minibolita')               
+                minicuas[150].classList.add('minibolita')               
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 15 ) {              
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.add('minibolita')               
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 14 ) {              
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.add('minibolita')               
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 13 ) {              
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.add('minibolita')               
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 12 ) {              
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.add('minibolita')               
+            }               
+            if ( vpt == 11 ) {              
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.add('minibolita')               
+                minicuas[158].classList.remove('minibolita')                
+            }               
+             if ( vpt == 10 ) {             
+               minicuas[121].classList.add('minibolita')                
+                minicuas[122].classList.add('minibolita')               
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 9 ) {               
+                minicuas[121].classList.add('minibolita')               
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 8 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.add('minibolita')               
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 7 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.add('minibolita')               
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 6 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.add('minibolita')               
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 5 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.add('minibolita')               
+                minicuas[130].classList.remove('minibolita')                
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 4 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.remove('minibolita')                
+                minicuas[130].classList.remove('minibolita')                
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.add('minibolita')               
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 3 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.remove('minibolita')                
+                minicuas[130].classList.remove('minibolita')                
+                minicuas[133].classList.add('minibolita')               
+                minicuas[134].classList.remove('minibolita')                
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 2 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.remove('minibolita')                
+                minicuas[130].classList.remove('minibolita')                
+                minicuas[133].classList.remove('minibolita')                
+                minicuas[134].classList.remove('minibolita')                
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.add('minibolita')               
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 1 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.remove('minibolita')                
+                minicuas[130].classList.remove('minibolita')                
+                minicuas[133].classList.remove('minibolita')                
+                minicuas[134].classList.remove('minibolita')                
+                minicuas[137].classList.add('minibolita')               
+                minicuas[138].classList.remove('minibolita')                
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+            if ( vpt == 0 ) {               
+                minicuas[121].classList.remove('minibolita')                
+                minicuas[122].classList.remove('minibolita')                
+                minicuas[125].classList.remove('minibolita')                
+                minicuas[126].classList.remove('minibolita')                
+                minicuas[129].classList.remove('minibolita')                
+                minicuas[130].classList.remove('minibolita')                
+                minicuas[133].classList.remove('minibolita')                
+                minicuas[134].classList.remove('minibolita')                
+                minicuas[137].classList.remove('minibolita')                
+                minicuas[138].classList.remove('minibolita')                
+                minicuas[141].classList.remove('minibolita')                
+                minicuas[142].classList.remove('minibolita')                
+                minicuas[145].classList.remove('minibolita')                
+                minicuas[146].classList.remove('minibolita')                
+                minicuas[149].classList.remove('minibolita')                
+                minicuas[150].classList.remove('minibolita')                
+                minicuas[153].classList.remove('minibolita')                
+                minicuas[154].classList.remove('minibolita')                
+                minicuas[157].classList.remove('minibolita')                
+                minicuas[158].classList.remove('minibolita')                
+            }               
+
+
+ 
+squares[28].classList.remove('opllena')
+squares[49].classList.remove('opllena')
+squares[70].classList.remove('opllena')
+
+
+revisa = 0;
+document.getElementById("bnext").disabled = true;
+
+
+
+
+
+
+                        } //este el el fin de la funcion next  
+
+
+</script>
+</html>
